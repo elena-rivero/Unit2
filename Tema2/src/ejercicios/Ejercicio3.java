@@ -11,10 +11,6 @@ public class Ejercicio3 {
 			System.out.println("Es casi-cero");
 		} else
 			System.out.println("No es casi-cero");
-		
-		if(numero<=-1 || numero >=1 || numero ==0) {
-			System.out.println("No es casi-cero");
-		}
 	}
 
 }
