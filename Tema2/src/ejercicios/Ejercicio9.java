@@ -5,15 +5,22 @@ import java.util.Scanner;
 public class Ejercicio9 {
 
 	public static void main(String[] args) {
+		// Le damos a PIEDRA, PAPEL y TIJERAS valores enteros para luego poder comparar
 		final int PIEDRA = 1;
 		final int PAPEL = 2;
 		final int TIJERAS = 3;
+
+		// Declaramos las variables donde guardaremos las jugadas de los jugadores
 		int jugador1, jugador2;
 
+		// Creamos el Scanner
 		Scanner sc = new Scanner(System.in);
+
+		// Le pedimos al jugador 1 que elija una opción
 		System.out.println("Jugador 1: Elija PIEDRA [1], PAPEL [2] o TIJERAS [3]");
 		jugador1 = sc.nextInt();
 
+		// Le pedimos al jugador 2 que elija una opción
 		System.out.println("Jugador 2: Elija PIEDRA, PAPEL o TIJERAS");
 		jugador2 = sc.nextInt();
 
@@ -25,14 +32,17 @@ public class Ejercicio9 {
 
 			// Si los valores introducidos son correctos, hacemos las distintas
 			// comprobaciones
-		} else {
+		} else { // Si los dos jugadores han introducido los mismos valores, entonces empatan
 			if (jugador1 == jugador2) {
 				System.out.println("EMPATE");
 			} else if (jugador1 == PIEDRA && jugador2 == TIJERAS 
 					|| jugador1 == TIJERAS && jugador2 == PAPEL
 					|| jugador1 == PAPEL && jugador2 == PIEDRA) {
+				// Si jugador1 juega PIEDRA y el jugador2 TIJERAS, gana el jugador 1
+				// Si jugador1 juega TIJERAS y el jugador2 PAPEL, gana el jugador 1
+				// Si jugador1 juega PAPEL y el jugador2 PIEDRA, gana el jugador 1
 				System.out.println("Gana el jugador 1");
-			} else {
+			} else { // En cualquier otro caso, gana el jugador 2
 				System.out.println("Gana el jugador 2");
 			}
 		}
