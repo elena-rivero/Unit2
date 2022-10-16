@@ -34,15 +34,19 @@ public class Ejercicio3 {
 		// Según la opción seleccionada, realizaremos una operación u otra
 		switch(opcion) {
 		case "A": 
+			// Se realiza la suma de los dos números
 			System.out.println("La suma de los números es: " + (num1+num2));
 			break;
 		case "B":
+			// Se realiza la resta de los dos números
 			System.out.println("La resta de los dos números es: " + (num1 - num2));
 			break;
 		case "C":
+			// Se realiza la multiplicación de los dos números
 			System.out.println("La multiplicación de los dos números es: " + (num1 * num2));
 			break;
 		case "D":
+			// Habría que devolver la división de los dos números
 			// Comprobamos que el divisor sea distinto de 0 antes de realizar la división
 			if(num2==0) {
 				// Si es 0, mostramos mensaje de error
