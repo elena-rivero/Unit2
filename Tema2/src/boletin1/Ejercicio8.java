@@ -20,19 +20,19 @@ public class Ejercicio8 {
 			System.out.println("ERROR: La nota introducida no está comprendida entre 0 y 10");
 		} else {
 			// Si la nota introducida se encuentra en el rango, hacemos las distintas comprobaciones
-			if (nota >= 0 && nota < 5) {
+			if (nota < 5) {
 				// Si la nota está dentro del rango [0, 5) debe mostrarse INSUFICIENTE
 				System.out.println("INSUFICIENTE");
-			} else if (nota >= 5 && nota < 6) {
+			} else if (nota < 6) {
 				// Si la nota está dentro del rango [5, 6) debe mostrarse SUFICIENTE
 				System.out.println("SUFICIENTE");
-			} else if (nota >= 6 && nota < 7) {
+			} else if (nota < 7) {
 				// Si la nota está dentro del rango [6, 7) debe mostrarse BIEN
 				System.out.println("BIEN");
-			} else if (nota >= 7 && nota < 9) {
+			} else if (nota < 9) {
 				// Si la nota está dentro del rango [7, 9) debe mostrarse NOTABLE
 				System.out.println("NOTABLE");
-			} else if (nota >= 9 && nota <= 10) {
+			} else if (nota <= 10) {
 				// Si la nota está dentro del rango [9, 10] debe mostrarse SOBRESALIENTE
 				System.out.println("SOBRESALIENTE");
 			}

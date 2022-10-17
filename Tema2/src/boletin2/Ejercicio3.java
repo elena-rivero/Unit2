@@ -7,7 +7,7 @@ public class Ejercicio3 {
 	public static void main(String[] args) {
 		// num1 y num2 serán los dos números que solicitaremos al usuario
 		double num1, num2;
-		
+		double resultado;
 		// En opcion guardamos la opción seleccionada por el usuario
 		String opcion;
 		
