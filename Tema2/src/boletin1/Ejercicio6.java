@@ -38,8 +38,12 @@ public class Ejercicio6 {
 		 * resolver como una ecuación de 1º grado
 		 */
 		if (a == 0) {
-			/* TODO: Resolver ecuación de 1º grado */
-			
+			/* Resolver ecuación de 1º grado */
+			x1=-c/b;
+			if(b!=0)
+				System.out.println("La ecuación sólo tiene una solución: " + x1);
+			else
+				System.out.println("No hay ecuación a resolver");
 		} else {
 			/*
 			 * Si lo que se encuentra dentro de la raíz es un valor negativo, la ecuación no
